@@ -1,17 +1,16 @@
 function openCity(a, b) {
-  var i, x, tablinks;
-  x = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "active";
-  }
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < x.length; i++) {
-    tablinks[i].classList.remove('active')
-  }
-  document.getElementById(b).classList.add('active');
+    var c, x, z;
+    x = document.getElementsByClassName('tabcontent');
+    for (c = 0; c < x.length; c++) {
+        x[c].classList.remove('active')
+    };
+    z = document.getElementsByClassName('tablinks');
+    for (c = 0; c < z.length; c++) {
+        z[c].classList.remove('active')
+    };
+    document.getElementById(b).classList.add('active');
     a.currentTarget.classList.add('active')
 }
-
 var modal = document.getElementById('myModal');
 var btn = document.getElementById('myBtn');
 var span = document.getElementsByClassName('close')[0];
